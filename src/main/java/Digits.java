@@ -4,10 +4,10 @@ public class Digits
 {
 
 	
-
+private ArrayList<Integer> digitList;
 	public Digits(int num)
 	{ 
-	digitList=new Arraylist<Integer>();
+	digitList=new ArrayList<Integer>();
 		if(num==0)
 		{
 digitList.add(new Integer(0));
