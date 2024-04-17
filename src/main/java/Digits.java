@@ -3,11 +3,11 @@ import java.util.ArrayList;
 public class Digits
 {
 
-	private ArrayList<Integer> digitList;
+	
 
 	public Digits(int num)
 	{ 
-
+	digitList=new Arraylist<Integer>();
 		if(num==0)
 		{
 digitList.add(new Integer(0));
