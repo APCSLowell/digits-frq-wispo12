@@ -6,11 +6,17 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num)
-	{ /* to be implemented in part (a) */ 
-	for(char ch : num.toCharArray()) { 
-		
-    digitList.add( Integer.valueOf(String.valueOf(ch))); 
-} 
+	{ 
+	digitList=new Arraylist<Integer>();
+		if(num==0)
+		{
+digitList.add(new Integer(0));
+		}
+		while(num>0)
+			{
+digitList.add(0,new Integer(num%10));
+				num/=10;
+			}
 	}
 
 	public boolean isStrictlyIncreasing()
